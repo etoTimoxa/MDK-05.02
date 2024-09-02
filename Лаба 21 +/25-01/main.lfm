@@ -1,0 +1,73 @@
+object fMain: TfMain
+  Left = 300
+  Height = 500
+  Top = 134
+  Width = 875
+  BorderStyle = bsSingle
+  Caption = 'Телефонный справочник'
+  ClientHeight = 500
+  ClientWidth = 875
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.0.0.3'
+  object Panel1: TPanel
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 875
+    Align = alTop
+    ClientHeight = 34
+    ClientWidth = 875
+    TabOrder = 0
+    object bEdit: TButton
+      Left = 210
+      Height = 31
+      Top = 2
+      Width = 188
+      Caption = 'Редактировать контакт'
+      TabOrder = 0
+      OnClick = bEditClick
+    end
+    object bDel: TButton
+      Tag = 2
+      Left = 410
+      Height = 31
+      Top = 2
+      Width = 188
+      Caption = 'Удалить контакт'
+      TabOrder = 1
+      OnClick = bDelClick
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 466
+    Top = 34
+    Width = 875
+    Align = alClient
+    ColCount = 3
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+  end
+  object bAdd: TButton
+    Left = 10
+    Height = 31
+    Top = 2
+    Width = 188
+    Caption = 'Добавить контакт'
+    TabOrder = 2
+    OnClick = bAddClick
+  end
+  object bSort: TButton
+    Left = 610
+    Height = 31
+    Top = 2
+    Width = 188
+    Caption = 'Сортировка контакотов'
+    TabOrder = 3
+    OnClick = bSortClick
+  end
+end

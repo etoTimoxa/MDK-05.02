@@ -1,0 +1,108 @@
+object fEdit: TfEdit
+  Left = 1205
+  Height = 284
+  Top = 337
+  Width = 674
+  BorderStyle = bsDialog
+  Caption = 'Редактор контакта'
+  ClientHeight = 284
+  ClientWidth = 674
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.0.0.3'
+  object Label1: TLabel
+    Left = 20
+    Height = 20
+    Top = 10
+    Width = 131
+    Caption = 'Название миксера'
+  end
+  object eTitle: TEdit
+    Left = 20
+    Height = 28
+    Top = 40
+    Width = 475
+    TabOrder = 0
+    OnChange = eTitleChange
+  end
+  object Label2: TLabel
+    Left = 20
+    Height = 20
+    Top = 80
+    Width = 109
+    Caption = 'Производитель'
+  end
+  object bSave: TBitBtn
+    Left = 40
+    Height = 35
+    Top = 230
+    Width = 200
+    Caption = 'Сохранить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object bCancel: TBitBtn
+    Left = 260
+    Height = 35
+    Top = 230
+    Width = 200
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object eProizvoditel: TEdit
+    Left = 20
+    Height = 28
+    Top = 104
+    Width = 262
+    TabOrder = 3
+  end
+  object Label3: TLabel
+    Left = 20
+    Height = 20
+    Top = 140
+    Width = 54
+    Caption = 'Модель'
+  end
+  object eVes: TEdit
+    Left = 330
+    Height = 28
+    Top = 104
+    Width = 262
+    TabOrder = 4
+  end
+  object ePrice: TEdit
+    Left = 330
+    Height = 28
+    Top = 170
+    Width = 262
+    TabOrder = 5
+  end
+  object Label4: TLabel
+    Left = 330
+    Height = 20
+    Top = 80
+    Width = 100
+    Caption = 'Вес в граммах'
+  end
+  object Label5: TLabel
+    Left = 330
+    Height = 20
+    Top = 139
+    Width = 74
+    Caption = 'Стоимость'
+  end
+  object eModel: TEdit
+    Left = 24
+    Height = 28
+    Top = 170
+    Width = 262
+    TabOrder = 6
+  end
+end

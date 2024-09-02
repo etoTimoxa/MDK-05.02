@@ -1,0 +1,64 @@
+object Form1: TForm1
+  Left = 470
+  Height = 499
+  Top = 156
+  Width = 776
+  Caption = 'Задание 1'
+  ClientHeight = 499
+  ClientWidth = 776
+  DesignTimePPI = 120
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -27
+  Font.Name = 'Segoe UI Historic'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '3.0.0.3'
+  object Button1: TButton
+    Left = 240
+    Height = 72
+    Top = 160
+    Width = 256
+    Caption = 'Щелкните здесь'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Name = 'Tempus Sans ITC'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Left = 112
+    Height = 37
+    Top = 56
+    Width = 536
+    Caption = 'Догадайтесь, кто сделал этот проект?'
+    Color = clMenuHighlight
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -27
+    Font.Name = 'Segoe UI Historic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 281
+    Height = 1
+    Top = 314
+    Width = 1
+  end
+  object BitBtn1: TBitBtn
+    Left = 632
+    Height = 38
+    Top = 418
+    Width = 94
+    Caption = 'Выход'
+    Kind = bkAbort
+    ModalResult = 3
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+end

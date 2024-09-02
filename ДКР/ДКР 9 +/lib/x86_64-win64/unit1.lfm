@@ -1,0 +1,75 @@
+object fMain: TfMain
+  Left = 683
+  Height = 500
+  Top = 341
+  Width = 1180
+  BorderStyle = bsDialog
+  Caption = 'Модели миксеров'
+  ClientHeight = 500
+  ClientWidth = 1180
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.0.0.3'
+  object Panel1: TPanel
+    Left = 0
+    Height = 42
+    Top = 0
+    Width = 1180
+    Align = alTop
+    ClientHeight = 42
+    ClientWidth = 1180
+    TabOrder = 0
+    object bAdd: TSpeedButton
+      Left = 10
+      Height = 30
+      Top = 2
+      Width = 188
+      Caption = 'Добавить'
+      OnClick = bAddClick
+    end
+    object bEdit: TSpeedButton
+      Left = 220
+      Height = 30
+      Top = 2
+      Width = 188
+      Caption = 'Редактировать'
+      OnClick = bEditClick
+    end
+    object bDel: TSpeedButton
+      Left = 450
+      Height = 30
+      Top = 2
+      Width = 188
+      Caption = 'Удалить'
+      OnClick = bDelClick
+    end
+    object bSort: TSpeedButton
+      Left = 670
+      Height = 30
+      Top = 2
+      Width = 188
+      Caption = 'Сортировка по алфавиту'
+      OnClick = bSortClick
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 458
+    Top = 42
+    Width = 1180
+    Align = alClient
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = bEditClick
+    ColWidths = (
+      146
+      128
+      120
+      141
+      80
+    )
+  end
+end
